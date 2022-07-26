@@ -1,0 +1,83 @@
+<div class="container__body">
+    <div class="info__text">
+        <h1 class="text__res">Encontramos este lote para ti.</h1>
+        <h3 class="text__2">¡Gracias por contarnos cómo sería tu lote ideal!</h3>
+        <p class="text__2">Evaluamos varias opciones y esta es la que mejor se adapta a lo que estás buscando.</p>
+        <h5 class="text__2 conocelo">¡Conocelo!</h5>
+    </div>
+</div>
+
+<div class="container__2">
+    <div class="container__info">
+        <div class="tittle">
+            <h1 class="text">{{nameLote}}</h1>
+        </div>
+        <div class="info">
+            <p class="text__payande">Calle 9, No. 9</p>
+        </div>
+        <div class="info__2">
+            <p class="text__payande">{{precio}}</p>
+        </div>
+        <div class="info__3">
+            <p class="text__payande">{{area}}</p>
+        </div>
+        <div class="info__4">
+            <p class="text__payande">Fecha de entrega: junio 2024</p> 
+        </div>
+
+        <button class="boton" routerLink="/habitat">Simular pagos</button>
+
+    </div>
+    <div class="container__image">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../../../assets/images/CASA-EXTERIOR-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../../../assets/images/CASA-INTERIOR-1-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../../../assets/images/montes del retiro 1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../../../assets/images/montes 2.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+    </div>
+
+</div>
+
+<div class="container__body video__montes">
+    <p class="video">
+        <iframe width="1200" height="666" [src]="getVideoIframe('https://www.youtube.com/watch?v=Y7RnHl6H5Rk&ab_channel=InfoHabitat')" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>    
+</div>
+
+<div class="container__body position">
+        <div *ngFor="let lot of lotes;let i= index;">
+            <div *ngIf="i>0 && i<4">
+                <div class="container__info2">
+                    <div class="image">
+                        <img src="../../../assets/images/CASA-INTERIOR-1-1.jpg" alt="">
+                    </div>
+                    <div class="tittle separacion">
+                        <h1 class="text text2">{{lot.lote}}</h1>
+                    </div>
+                    <div class="info">
+                        <p class="text__payande">Calle 9, No. 9</p>
+                    </div>
+                    <div class="info__2 text__color">
+                        ${{lot.precio}}.000.000 (COL)
+                    </div>
+                    <div class="info__2 text__color">
+                        Área privativa: {{lot.area}} m2
+                    </div>
+                    <div class="info__2 text__color">
+                        <p>Conocelo</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+</div>

@@ -1,0 +1,51 @@
+.container__asistente{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(233, 233, 237);
+}
+
+.text__five{
+    font-size:xx-large;
+    font-family: lovelace;
+    font-weight: 800;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: rgb(27, 182, 234);
+    width: 70%;
+    height: min-content;
+}
+
+.seleccion{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: max-content;
+}
+
+.posicion__boton{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+}
+
+.button__m{
+    border: 1px solid rgb(254, 122, 75);
+    margin-top: 70px;
+    border-radius: 15px;
+    height: 60px;
+    color: white;
+    background-color: rgb(254, 122, 75);
+    margin-top: 30px;
+    width: 100%;
+}
+
+.image__2{
+    border-radius: 15px;
+    width: 320px;
+    height: 320px;
+}
